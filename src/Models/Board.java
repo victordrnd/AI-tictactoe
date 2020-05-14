@@ -7,7 +7,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Board {
-    int[][] grille = { { 1, 0, 0 }, { -1, 0, 1 }, { 0, -1, 0 } };
+    public int[][] grille = { { 1, 1, 1 }, { 0, 0, 1 }, { 0, -1, 1 } };
+    Player player = new Player('X', 1);
+    char opponent = 'O';
+
+
+
+    public void init(){
+    }
+
 
     public void display() {
         System.out.println(" ___________");
@@ -53,6 +61,7 @@ public class Board {
         button.setFont(new Font("Arial", Font.PLAIN, 30));
         button.setBackground(Color.WHITE);
         return button;
-
     }
+
+    
 }
